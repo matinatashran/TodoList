@@ -1,0 +1,247 @@
+.mainContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.addTodoBox{
+    width: 650px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.inputBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inputBox input{
+    width: 100%;
+    padding: 15px 25px;
+    margin: 15px 0;
+    border-radius: 30px;
+    border: none;
+    box-shadow: 0 0 3px 0.5px #84b9ff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #135ab6;
+}
+
+.inputBox input:focus{
+    outline: none;
+    box-shadow: 0 0 5px 1px #6795d1;
+}
+
+.inputBox input::placeholder{
+    color: #acd0ff;
+}
+
+.todoTime{
+    width: 75% !important;
+}
+
+.buttonBox{
+    margin: 10px 0;
+}
+
+.buttonBox button{
+    width: 40%;
+    height: 50px;
+    border-radius: 7px;
+    border: none;
+    background-color: #fff;
+    color: #4596ff;
+    border: 2px solid #4596ff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.buttonBox button:hover{
+    background-color: #4596ff;
+    color: #fff;
+}
+
+.buttonBox button:active{
+    outline: none;
+}
+
+.horizontalLine{
+    width: 85%;
+    height: 1px;
+    /* box-shadow: 0 5px 10px 1px #6cabff; */
+    background-color: #6c82ff81;
+}
+
+.todosBox{
+    margin: 50px;
+    width: 800px;
+}
+
+.filterTodo{
+    text-align: center;
+}
+
+.filterTodo .filter{
+    width: 60%;
+    height: 50px;
+    border-radius: 6px;
+    padding: 0 20px;
+    color: #84b9ff;
+    font-weight: bold;
+    font-size: 1rem;
+    border: 2px solid #84b9ff;
+}
+
+.filter:focus{
+    outline: none;
+}
+
+.filter option:hover{
+    color: #135ab6;
+}
+
+.showTodo{
+    width: 100%;
+    margin: 30px auto;
+    min-height: 80vh;
+    border-radius: 8px;
+    position: relative;
+    padding: 5px;
+}
+
+.emptyText{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 11rem;
+    color: #e9f1ff;
+    position: relative;
+}
+
+.emptyText span{
+    position: absolute;
+    font-size: 1.6rem;
+    font-family: sans-serif;
+    font-weight: bold;
+    top: 77px;
+    left: 344px;
+    transform: rotate(-20deg);
+}
+
+
+@media (max-width: 1024px) {
+    .addTodoBox{
+        width: 550px;
+    }
+
+    .todosBox{
+        margin: 40px;
+        width: 700px;
+    }
+
+    .emptyText{
+        font-size: 9rem;
+    }
+    
+    .emptyText span{
+        font-size: 1.4rem;
+        top: 60px;
+        left: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .addTodoBox{
+        width: 330px;
+    }
+
+    .todosBox{
+        margin: 40px 10px;
+        width: 480px;
+    }
+
+    .inputBox input{
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+
+    .buttonBox button{
+        height: 42px;
+        font-size: 1rem;
+    }
+
+    .filterTodo .filter{
+        height: 42px;
+    }
+
+    .emptyText{
+        font-size: 8rem;
+        margin-top: 0;
+    }
+    
+    .emptyText span{
+        font-size: 1.2rem;
+        top: 55px;
+        left: 196px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .addTodoBox{
+        width: 90%;
+    }
+
+    .todosBox{
+        margin: 40px 10px;
+        width: 95%;
+    }
+
+    .inputBox input{
+        padding: 7px 20px;
+        font-size: 0.9rem;
+    }
+
+    .buttonBox button,
+    .filterTodo .filter{
+        height: 35px;
+        font-size: 0.9rem;
+    }
+
+    .filterTodo .filter{
+        padding: 0 10px;
+    }
+
+    .emptyText{
+        font-size: 6rem;
+    }
+    
+    .emptyText span{
+        display: none;
+    }
+
+}
+
+@media (max-width: 320px) {
+    .todoTime{
+        width: 85% !important;
+    }
+
+    .buttonBox button{
+        width: 50%;
+    }
+
+    .buttonBox button,
+    .filterTodo .filter{
+        height: 30px;
+        font-size: 0.8rem;
+    }
+
+    .emptyText{
+        font-size: 2rem;
+    }
+    
+}

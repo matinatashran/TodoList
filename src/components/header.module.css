@@ -1,0 +1,124 @@
+.headerContainer{
+    margin-bottom: 50px;
+}
+
+.image{
+    background: url("../images/image4.jpg");
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.image::before{
+    content: "";
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    top: 0;
+    background-color: #000;
+    opacity: 0.4;
+}
+
+.headerText{
+    background-color: #00000095;
+    width: 40%;
+    height: 100%;
+    color: #fff;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 100px;
+}
+
+
+@media (max-width: 1200px) {
+    .headerText{
+        padding: 100px 50px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .image,
+    .image::before{
+        height: 350px;
+    }
+
+    .headerText{
+        padding: 50px 30px;
+    }
+
+    h1{
+        font-size: 1.8rem;
+    }
+
+    h2{
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .image,
+    .image::before{
+        height: 300px;
+    }
+
+    .headerText{
+        padding: 30px;
+    }
+
+    h1{
+        font-size: 1.5rem;
+    }
+
+    h2{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .image,
+    .image::before{
+        height: 200px;
+    }
+
+    .headerText{
+        padding: 10px;
+    }
+
+    h1{
+        font-size: 1rem;
+    }
+
+    h2, span{
+        font-size: 0.7rem;
+    }
+}
+
+/* Ultra Size Device */
+
+@media (min-width: 1600px) {
+    .image, 
+    .image::before{
+        height:600px;
+    }
+}
+
+@media (min-width: 1950px) {
+    .image, 
+    .image::before{
+        height:750px;
+    }
+}
+
+@media (min-width: 2300px) {
+    .image, 
+    .image::before{
+        height:850px;
+    }
+}

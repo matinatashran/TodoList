@@ -1,0 +1,83 @@
+.todoCardContainer{
+    width: 90%;
+    margin: 15px auto;
+    padding: 5px 0;
+    border: none;
+    border-bottom: 1px solid #cfcfcf;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.todoCardContainer button{
+    margin: 0 5px;
+    width: 35px;
+    height: 35px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.btnDelete{
+    border: none;
+    border-right: 1px solid #ff0000;
+    background-color: #fff;
+    color: #ff0000;
+    border-radius: 50%;
+}
+
+.todoCardContainer label{
+    font-family: sans-serif;
+    margin: 10px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #3e93e8;
+}
+
+.rightCard label{
+    font-size: 1rem;
+}
+
+
+@media (max-width: 768px) {
+    .todoCardContainer label{
+        font-size: 1rem;
+    }
+
+    .todoCardContainer button{
+        width: 30px;
+        height: 30px;
+    }
+
+    .todoCardContainer{
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .todoCardContainer label{
+        font-size: 0.9rem;
+    }
+
+    .todoCardContainer button{
+        width: 27px;
+        height: 27px;
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .todoCardContainer{
+        width: 99%;
+    }
+
+    .todoCardContainer label{
+        font-size: 0.75rem;
+        margin: 5px;
+    }
+
+    .todoCardContainer button{
+        width: 23px;
+        height: 23px;
+        font-size: 0.75rem;
+    }
+}
